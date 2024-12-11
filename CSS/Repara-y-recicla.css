@@ -54,3 +54,18 @@ nav a:hover {
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+.container {
+    padding: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    text-align: center;
+    margin: 10px;
+}

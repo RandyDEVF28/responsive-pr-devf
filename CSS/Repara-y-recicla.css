@@ -1,0 +1,7 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: "Quantico", sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(224, 255, 110, 0.623));
+}

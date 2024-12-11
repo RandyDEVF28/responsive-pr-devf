@@ -5,3 +5,52 @@ body {
     line-height: 1.6;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(224, 255, 110, 0.623));
 }
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #1b5e20;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero .gallery {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.hero img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}

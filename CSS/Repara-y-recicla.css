@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-family: "Quantico", sans-serif;
     line-height: 1.6;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(224, 255, 110, 0.623));
+    background: linear-gradient(rgba(2, 39, 2, 0.5), rgba(24, 82, 12, 0.671));
 }
 
 header {
@@ -35,68 +35,66 @@ nav a:hover {
 
 .hero {
     position: relative;
-    height: 300px;
     overflow: hidden;
-    color: white;
+    height: 400px; /* Ajusta según el diseño */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.5em;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    z-index: 1;
+    color: rgb(255, 255, 255);
+    background-color: #155206; /* Color de respaldo */
 }
 
 .hero h2 {
     position: relative;
     z-index: 2;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.gallery {
+.background-carousel {
     position: absolute;
     top: 0;
     left: 0;
-    width: 400%;
+    width: 200%; /* 2 imágenes */
     height: 100%;
     display: flex;
-    animation: slide linear 5s 3s  infinite alternate;
+    animation: slide 25s linear infinite;
 }
 
-.gallery img {
+.background-carousel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
+/* Animación del carrusel */
 @keyframes slide {
-    0%, 20% {
+    0% {
         transform: translateX(0);
     }
-    25%, 45% {
+    25% {
+        transform: translateX(-50%);
+    }
+    50% {
         transform: translateX(-100%);
     }
-    50%, 70% {
+    75% {
+        transform: translateX(-150%);
+    }
+    100% {
         transform: translateX(-200%);
     }
-    75%, 100% {
-        transform: translateX(-300%);
-    }
 }
+
 
 .container {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
 }
+
 
 .services {
     display: grid;
@@ -105,7 +103,7 @@ nav a:hover {
 }
 
 .service {
-    background: #f4f4f4;
+    background: #a7a7a7;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -117,7 +115,6 @@ nav a:hover {
     height: 300px;
     border-radius: 8px;
 }
-
 footer {
     background-color: #1b5e20;
     color: white;
@@ -209,3 +206,5 @@ footer .social-icons .icon:hover {
     border-style: solid;
     border-color: #2e7d32 transparent transparent transparent;
 }
+
+
